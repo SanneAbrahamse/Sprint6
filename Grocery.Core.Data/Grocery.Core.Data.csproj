@@ -16,9 +16,9 @@
 	  <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.1" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Page Include="appsettings.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Page>
+		<Page Include="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Page>
 	</ItemGroup>
 
 	<ItemGroup>

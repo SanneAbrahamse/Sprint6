@@ -1,4 +1,4 @@
-﻿
+﻿using System.Data;
 using Grocery.Core.Data.Helpers;
 using Microsoft.Data.Sqlite;
 
@@ -20,12 +20,12 @@ namespace Grocery.Core.Data
 
         protected void OpenConnection()
         {
-            if (Connection.State != System.Data.ConnectionState.Open) Connection.Open();
+            if (Connection.State != ConnectionState.Open) Connection.Open();
         }
 
         protected void CloseConnection()
         {
-            if (Connection.State != System.Data.ConnectionState.Closed) Connection.Close();
+            if (Connection.State != ConnectionState.Closed) Connection.Close();
         }
 
         public void CreateTable(string commandText)
